@@ -3,7 +3,10 @@ import Link from "next/link";
 export default function TopicCard() {
   return (
     <section className="flex flex-wrap justify-between gap-y-2 max-md:gap-y-4 max-md:px-4">
-      <Link href="#" className="md:w-topicCardWidth flex ">
+      <Link
+        href="#"
+        className="md:w-topicCardWidth flex topicCard overflow-hidden"
+      >
         <article className="relative">
           <img src="/topic1.jpg" alt="" />
 
@@ -14,7 +17,10 @@ export default function TopicCard() {
         </article>
       </Link>
 
-      <Link href="#" className="md:w-topicCardWidth flex ">
+      <Link
+        href="#"
+        className="md:w-topicCardWidth flex topicCard overflow-hidden"
+      >
         <article className="relative">
           <img src="/topic2.jpg" alt="" />
 
@@ -25,7 +31,10 @@ export default function TopicCard() {
         </article>
       </Link>
 
-      <Link href="#" className="flex max-md:aspect-topicCard">
+      <Link
+        href="#"
+        className="flex max-md:aspect-topicCard topicCard overflow-hidden"
+      >
         <article className="relative">
           <img
             src="/topic3.jpg"

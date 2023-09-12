@@ -32,13 +32,19 @@ export default function Footer() {
             <p className="font-normal mb-4">COMPAINY</p>
             <ul className="text-sm flex flex-col gap-2 text-[#797979]">
               <li>
-                <Link href={"#"}>SHOP</Link>
+                <Link className="navHover relative" href={"#"}>
+                  SHOP
+                </Link>
               </li>
               <li>
-                <Link href={"#"}>COLLECTIONS</Link>
+                <Link className="navHover relative" href={"#"}>
+                  COLLECTIONS
+                </Link>
               </li>
               <li>
-                <Link href={"#"}>ABOUT</Link>
+                <Link className="navHover relative" href={"#"}>
+                  ABOUT
+                </Link>
               </li>
             </ul>
           </div>
@@ -46,16 +52,24 @@ export default function Footer() {
             <p className="font-normal mb-4">SUPPORT</p>
             <ul className="text-sm flex flex-col gap-2 text-[#797979]">
               <li>
-                <Link href={"#"}>RETURNS</Link>
+                <Link className="navHover relative" href={"#"}>
+                  RETURNS
+                </Link>
               </li>
               <li>
-                <Link href={"#"}>EXCHANGES</Link>
+                <Link className="navHover relative" href={"#"}>
+                  EXCHANGES
+                </Link>
               </li>
               <li>
-                <Link href={"#"}>SHIPPING</Link>
+                <Link className="navHover relative" href={"#"}>
+                  SHIPPING
+                </Link>
               </li>
               <li>
-                <Link href={"#"}>CONTACT</Link>
+                <Link className="navHover relative" href={"#"}>
+                  CONTACT
+                </Link>
               </li>
             </ul>
           </div>
@@ -63,10 +77,14 @@ export default function Footer() {
             <p className="font-normal mb-4">INFORMATION</p>
             <ul className="text-sm flex flex-col gap-2 text-[#797979]">
               <li>
-                <Link href={"#"}>PRIVACY POLICY</Link>
+                <Link className="navHover relative" href={"#"}>
+                  PRIVACY POLICY
+                </Link>
               </li>
               <li>
-                <Link href={"#"}>TERMS OF USE</Link>
+                <Link className="navHover relative" href={"#"}>
+                  TERMS OF USE
+                </Link>
               </li>
             </ul>
           </div>
@@ -74,10 +92,14 @@ export default function Footer() {
             <p className="font-normal mb-4">FOLLOW US</p>
             <ul className="text-sm flex flex-col gap-2 text-[#797979]">
               <li>
-                <Link href={"#"}>INSTAGRAM</Link>
+                <Link className="navHover relative" href={"#"}>
+                  INSTAGRAM
+                </Link>
               </li>
               <li>
-                <Link href={"#"}>TIKTOK</Link>
+                <Link className="navHover relative" href={"#"}>
+                  TIKTOK
+                </Link>
               </li>
             </ul>
           </div>
@@ -89,7 +111,7 @@ export default function Footer() {
             Get 10% off on your first order. We’ll only send you updates on new
             releases and exclusive offers, promise.
           </p>
-          <button className="bg-black text-white h-12 px-10 rounded-md">
+          <button className="shopNowBtn bg-black text-white h-12 px-10 rounded-md">
             SHOP NOW
           </button>
         </div>

@@ -21,27 +21,27 @@ export default function Navbar() {
         </Link>
 
         <div className="flex items-center space-x-8 max-md:hidden">
-          <Link href="#">
+          <Link href="#" className="relative navHover ">
             <li>NEW ARRIVAL</li>
           </Link>
-          <Link href="#">
+          <Link href="#" className="relative navHover ">
             <li>TOPS</li>
           </Link>
-          <Link href="#">
+          <Link href="#" className="relative navHover ">
             <li>BOTTOMS</li>
           </Link>
-          <Link href="#">
+          <Link href="#" className="relative navHover ">
             <li>ACCESSORIES</li>
           </Link>
         </div>
       </ul>
 
       <div className="space-x-8 flex">
-        <Link href="#" className="max-md:hidden">
+        <Link href="#" className="max-md:hidden  relative navHover ">
           ACCOUNT
         </Link>
 
-        <button className="flex items-center gap-2">
+        <button className="flex items-center gap-2 relative navHover ">
           BAG
           <BsHandbag />
         </button>

@@ -24,6 +24,9 @@ module.exports = {
       aspectRatio: {
         topicCard: ".77 / 1",
       },
+      transitionProperty: {
+        width: "100%",
+      },
     },
   },
   plugins: [],

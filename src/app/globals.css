@@ -11,3 +11,23 @@
 .logo {
   margin: 0 auto !important;
 }
+
+.navHover::after {
+  @apply content-[""] absolute block h-1 bg-[#80abff] top-1/2 -translate-y-1/2 w-0 opacity-75 transition-width duration-300 ease-out;
+}
+
+.navHover:hover::after {
+  @apply left-0 w-full;
+}
+
+.imgWrapper:hover .imgBack {
+  @apply opacity-100 transition-all duration-300 ease-in-out;
+}
+
+.topicCard:hover > article > div > button {
+  @apply bg-black text-white transition-all duration-300 ease-in-out;
+}
+
+.shopNowBtn:hover {
+  @apply bg-white text-black border-[1px] border-black transition-all duration-300 ease-in-out;
+}

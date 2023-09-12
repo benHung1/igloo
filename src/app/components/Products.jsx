@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 import { data } from "../productsData";
 
@@ -14,8 +15,22 @@ export default function Products() {
               href="#"
               className="max-md:w-mbCardWidth cardContainer flex w-cardWidth flex-wrap"
             >
-              <article className="w-full relative space-y-2">
-                <img src={item.imgUrl} />
+              <article className="w-full relative imgWrapper">
+                <Image
+                  className="object-cover imgFront"
+                  src={item.imgUrl}
+                  width={400}
+                  height={400}
+                  alt={item.productTitle}
+                />
+                <Image
+                  className="object-cover absolute top-0 opacity-0 imgBack"
+                  src={item.imgBackUrl}
+                  width={400}
+                  height={400}
+                  alt={item.productTitle}
+                />
+
                 <p>{item.productTitle}</p>
                 <span className="text-sm">{item.productPrice}</span>
               </article>
