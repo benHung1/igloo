@@ -27,6 +27,10 @@ module.exports = {
       transitionProperty: {
         width: "100%",
       },
+
+      scale: {
+        topicImg: "1.15",
+      },
     },
   },
   plugins: [],

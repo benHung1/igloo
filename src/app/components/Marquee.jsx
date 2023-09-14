@@ -22,12 +22,14 @@ export default function Marquee() {
             width={300}
             height={300}
             className="mr-36 object-cover"
+            alt="marquee"
           />
           <Image
             src={"/marquee2.jpg"}
             width={300}
             height={300}
             className="mr-36 object-cover"
+            alt="marquee"
           />
 
           <Image
@@ -35,6 +37,7 @@ export default function Marquee() {
             width={300}
             height={300}
             className="mr-36 object-cover"
+            alt="marquee"
           />
         </Link>
       </div>
