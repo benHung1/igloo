@@ -8,14 +8,14 @@ export default function Products() {
     <section className="mb-8">
       <h2 className="text-3xl w-full text-center my-8">NEW ARRIVALS</h2>
 
-      <div className="flex w-full flex-wrap gap-2  justify-between px-4">
+      <div className="flex w-full flex-wrap gap-2 justify-between md:px-4 max-md:justify-center">
         {data.map((item) => {
           return (
             <Link
               href="#"
               className="max-md:w-mbCardWidth cardContainer flex w-cardWidth flex-wrap"
             >
-              <article className="w-full relative imgWrapper">
+              <article className="w-full relative imgWrapper max-md:text-sm">
                 <Image
                   className="object-cover imgFront"
                   src={item.imgUrl}
@@ -32,7 +32,9 @@ export default function Products() {
                 />
 
                 <p>{item.productTitle}</p>
-                <span className="text-sm">{item.productPrice}</span>
+                <span className="text-sm max-md:text-base">
+                  {item.productPrice}
+                </span>
               </article>
             </Link>
           );

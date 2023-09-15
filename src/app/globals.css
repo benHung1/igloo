@@ -31,3 +31,17 @@
 .shopNowBtn:hover {
   @apply bg-white text-black border-[1px] border-black transition-all duration-300 ease-in-out;
 }
+
+.marqueeWrapper {
+  white-space: nowrap;
+  animation: marquee 5s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translate(-100%);
+  }
+}
