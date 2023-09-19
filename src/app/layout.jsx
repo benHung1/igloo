@@ -1,7 +1,7 @@
 import Footer from "./components/Footer";
 import Marquee from "./components/Marquee";
 import Products from "./components/Products";
-import TopicCard from "./components/TopicCard";
+import TopicCards from "./components/TopicCards";
 import Video from "./components/Video";
 import "./globals.css";
 import { Inter } from "next/font/google";
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
         {children}
         <Video />
         <Products />
-        <TopicCard />
+        <TopicCards />
         <Marquee />
         <Footer />
       </body>
