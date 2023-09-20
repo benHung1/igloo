@@ -112,7 +112,7 @@ export default function Footer() {
             releases and exclusive offers, promise.
           </p>
           <button className="shopNowBtn bg-black text-white h-12 px-10 rounded-md">
-            SHOP NOW
+            GET 10%
           </button>
         </div>
       </div>
