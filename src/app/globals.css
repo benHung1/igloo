@@ -12,6 +12,32 @@
   margin: 0 auto !important;
 }
 
+.wrapper {
+  padding-top: 6rem;
+}
+
+.imgAni {
+  animation: imgAnimation 1s ease-in-out ;
+}
+
+@keyframes imgAnimation {
+  0% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+header {
+  transition: all 0.3s ease-in-out;
+}
+
+.navHidden {
+  transform: translateY(-100%);
+}
+
 .navHover::after {
   @apply content-[""] absolute block h-1 bg-[#80abff] top-1/2 -translate-y-1/2 w-0 opacity-75 transition-width duration-300 ease-out;
 }

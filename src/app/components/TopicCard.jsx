@@ -21,6 +21,7 @@ export default function TopicCard({
       >
         <article className="relative">
           <motion.div
+            className="h-full"
             style={{
               scale: customScale,
             }}
@@ -28,14 +29,16 @@ export default function TopicCard({
             <Image
               src={topicImg}
               ref={customRef}
-              className="scale-topicImg object-contain"
+              className="scale-topicImg object-cover h-full"
               alt="topicImg"
             />
           </motion.div>
 
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center w-full h-full flex flex-col justify-center items-center max-md:justify-end max-md:items-start max-md:flex-wrap max-md:content-start max-md:p-4">
-            <p className="text-[2.78vw] text-white mb-6">{title}</p>
-            <button className="text-sm bg-white h-12 px-10 rounded-md">
+            <p className="text-[2.78vw] max-md:text-3xl text-white mb-6">
+              {title}
+            </p>
+            <button className="text-sm  bg-white h-12 px-10 rounded-md">
               SHOP NOW
             </button>
           </div>

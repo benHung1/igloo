@@ -6,6 +6,11 @@ export default function UseCustomScroll(customRef) {
     offset: ["start end", "end start"],
   });
 
+  const { scrollYProgress: secScrollYProgress } = useScroll({
+    target: customRef,
+    offset: ["start end", "end start"],
+  });
+
   const { scrollYProgress: biggerScrollYProgress } = useScroll({
     target: customRef,
     offset: ["start end", "end start"],
@@ -13,7 +18,9 @@ export default function UseCustomScroll(customRef) {
 
   const scale = useTransform(scrollYProgress, [0, 1], [1.15, 1]);
 
+  const secScale = useTransform(secScrollYProgress, [0, 1], [1.15, 1]);
+
   const biggerScale = useTransform(biggerScrollYProgress, [0, 0.75], [1.2, 1]);
 
-  return { scale, biggerScale };
+  return { scale, secScale, biggerScale };
 }

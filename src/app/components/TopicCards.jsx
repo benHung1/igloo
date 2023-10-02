@@ -17,9 +17,11 @@ import topicImg3 from "@/public/topic3.jpg";
 export default function TopicCards() {
   const imgRef = useRef(null);
 
+  const secImgRef = useRef(null);
+
   const biggerImgRef = useRef(null);
 
-  const { scale } = UseCustomScroll(imgRef);
+  const { scale, secScale } = UseCustomScroll(imgRef);
 
   const { biggerScale } = UseCustomScroll(biggerImgRef);
 
@@ -37,8 +39,8 @@ export default function TopicCards() {
         topicImg={topicImg2}
         title="ACCESSORIES"
         customWidth="md:w-topicCardWidth"
-        customRef={imgRef}
-        customScale={scale}
+        customRef={secImgRef}
+        customScale={secScale}
       />
 
       <TopicCard

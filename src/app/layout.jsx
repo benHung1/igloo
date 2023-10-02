@@ -1,12 +1,7 @@
 import Footer from "./components/Footer";
-import Marquee from "./components/Marquee";
-import Products from "./components/Products";
-import TopicCards from "./components/TopicCards";
-import Video from "./components/Video";
+import Navbar from "./components/Navbar";
 import "./globals.css";
-import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -14,16 +9,16 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
+
   return (
     <html lang="en">
-      <body className={inter.className}>
-        {children}
-        <Video />
-        <Products />
-        <TopicCards />
-        <Marquee />
-        <Footer />
+      <body>
+        <Navbar />
+          {children}
+         <Footer/>
       </body>
     </html>
   );
 }
+

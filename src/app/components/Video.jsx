@@ -1,6 +1,6 @@
 export default function Video() {
   return (
-    <section className="h-videoHeight relative">
+    <section className="h-screen relative">
       <div className="bg-video absolute top-0 left-0 h-full border-t-[1px] border-b-[1px] w-full border-black">
         <video
           preload="true"

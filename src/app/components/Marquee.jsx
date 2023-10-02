@@ -32,6 +32,7 @@ export default function MarqueeSection() {
               height={300}
               className="mr-36 object-cover"
               alt="marquee"
+              priority
             />
             <Image
               src={"/marquee2.jpg"}
@@ -39,6 +40,7 @@ export default function MarqueeSection() {
               height={300}
               className="mr-36 object-cover"
               alt="marquee"
+              priority
             />
 
             <Image
@@ -47,28 +49,15 @@ export default function MarqueeSection() {
               height={300}
               className="mr-36 object-cover"
               alt="marquee"
+              priority
             />
             <Image
-              src={"/marquee1.jpg"}
+              src={"/marquee4.jpg"}
               width={300}
               height={300}
               className="mr-36 object-cover"
               alt="marquee"
-            />
-            <Image
-              src={"/marquee2.jpg"}
-              width={300}
-              height={300}
-              className="mr-36 object-cover"
-              alt="marquee"
-            />
-
-            <Image
-              src={"/marquee3.jpg"}
-              width={300}
-              height={300}
-              className="mr-36 object-cover"
-              alt="marquee"
+              priority
             />
           </Marquee>
         </Link>

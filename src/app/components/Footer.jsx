@@ -1,28 +1,38 @@
+"use client";
+
+import Link from "next/link";
+
 import { TbPackages } from "react-icons/tb";
 import { MdLocalShipping } from "react-icons/md";
 import { BsClockHistory, BsArrowReturnLeft } from "react-icons/bs";
-
-import Link from "next/link";
 
 export default function Footer() {
   return (
     <footer>
       <div className="flex justify-between flex-wrap text-sm">
         <div className=" p-4 h-36 flex flex-col items-center justify-evenly border-r-[1px] border-t-[1px] border-b-[1px] border-black flex-auto max-md:w-full max-md:items-start">
-          <TbPackages size={50} />
-          EASY EXCHANGES
+          <div className="flex items-center flex-col gap-2   max-md:flex max-md:items-center max-md:gap-4 max-md:flex-row">
+            <TbPackages size={50} />
+            <span>EASY EXCHANGES</span>
+          </div>
         </div>
         <div className=" p-4 h-36 flex flex-col items-center justify-evenly border-r-[1px] border-t-[1px] border-b-[1px] border-black flex-auto max-md:w-full max-md:items-start">
-          <MdLocalShipping size={50} />
-          FAST SHIPPING
+          <div className="flex items-center flex-col  gap-2 max-md:flex max-md:items-center max-md:gap-4 max-md:flex-row">
+            <MdLocalShipping size={50} />
+            <span>FAST SHIPPING</span>
+          </div>
         </div>
         <div className=" p-4 h-36 flex flex-col items-center justify-evenly border-r-[1px] border-t-[1px] border-b-[1px] border-black flex-auto max-md:w-full max-md:items-start">
-          <BsClockHistory size={50} />
-          24/7 CUSTOMER CARE
+          <div className="flex items-center flex-col  gap-2 max-md:flex max-md:items-center max-md:gap-4 max-md:flex-row">
+            <BsClockHistory size={50} />
+            <span>24/7 CUSTOMER CARE</span>
+          </div>
         </div>
         <div className=" p-4 h-36 flex flex-col items-center justify-evenly  flex-auto border-r-[1px] border-t-[1px] border-b-[1px] border-black max-md:w-full max-md:items-start">
-          <BsArrowReturnLeft size={50} />
-          EASY RETURNS
+          <div className="flex items-center flex-col  gap-2 max-md:flex max-md:items-center max-md:gap-4 max-md:flex-row">
+            <BsArrowReturnLeft size={50} />
+            <span>EASY RETURNS</span>
+          </div>
         </div>
       </div>
 
@@ -42,7 +52,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link className="navHover relative" href={"#"}>
+                <Link className="navHover relative" href={"/pages/about"}>
                   ABOUT
                 </Link>
               </li>

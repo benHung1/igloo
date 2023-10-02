@@ -20,6 +20,8 @@ module.exports = {
         mbCardWidth: "calc(100% / 2 - 16px)",
         topicCardWidth: "calc(100% / 2 - 4px)",
         mbFooterWidth: "calc(50% )",
+        aboutWidth: "calc(33.33% - 4px)"
+        
       },
       aspectRatio: {
         topicCard: ".77 / 1",
@@ -27,7 +29,6 @@ module.exports = {
       transitionProperty: {
         width: "100%",
       },
-
       scale: {
         topicImg: "1.15",
       },
