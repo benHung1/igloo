@@ -8,6 +8,11 @@
   padding: 0;
 }
 
+input::placeholder {
+  font-weight: 700;
+  color: grey;
+}
+
 .logo {
   margin: 0 auto !important;
 }
@@ -17,7 +22,7 @@
 }
 
 .imgAni {
-  animation: imgAnimation 1s ease-in-out ;
+  animation: imgAnimation 1s ease-in-out;
 }
 
 @keyframes imgAnimation {

@@ -1,3 +1,5 @@
+
+
 import about1 from "@/public/about1.jpg";
 import about2 from "@/public/about2.jpg";
 import about3 from "@/public/about3.jpg";
@@ -71,7 +73,7 @@ export default function About() {
       {/* order2 wrapper */}
       <div className="flex w-full gap-2 max-md:flex-col">
         <div className="imgWrapper w-full min-w-[55vw] flex justify-between flex-wrap gap-y-2 relative order-2 max-md:w-full max-md:order-1">
-          <Image src={aboutBottom} className="object-cover imgAni" />
+          <Image src={aboutBottom} className="object-cover imgAni" alt="about" />
         </div>
 
         <div className="textWrapper flex flex-col justify-center bg-[#f2f2f2] min-w-[25vw] w-[25vw] px-[2.77vw]  max-lg:py-6 max-lg:px-4 max-md:w-full max-md:order-2">
@@ -87,6 +89,7 @@ export default function About() {
           </p>
         </div>
       </div>
+
     </section>
   );
 }

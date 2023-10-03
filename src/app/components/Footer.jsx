@@ -1,14 +1,22 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
+
+import { useState, useEffect, useRef } from "react";
 
 import { TbPackages } from "react-icons/tb";
 import { MdLocalShipping } from "react-icons/md";
 import { BsClockHistory, BsArrowReturnLeft } from "react-icons/bs";
+import { AiFillCloseCircle } from "react-icons/ai";
 
 export default function Footer() {
+  const [showPopUp, setShowPopUp] = useState(false);
+
+  const popRef = useRef(null);
+
   return (
-    <footer>
+    <footer className="relative">
       <div className="flex justify-between flex-wrap text-sm">
         <div className=" p-4 h-36 flex flex-col items-center justify-evenly border-r-[1px] border-t-[1px] border-b-[1px] border-black flex-auto max-md:w-full max-md:items-start">
           <div className="flex items-center flex-col gap-2   max-md:flex max-md:items-center max-md:gap-4 max-md:flex-row">
@@ -121,7 +129,7 @@ export default function Footer() {
             Get 10% off on your first order. We’ll only send you updates on new
             releases and exclusive offers, promise.
           </p>
-          <button className="shopNowBtn bg-black text-white h-12 px-10 rounded-md">
+          <button className="getSaleBtn bg-black text-white h-12 px-10 rounded-md">
             GET 10%
           </button>
         </div>
@@ -131,6 +139,46 @@ export default function Footer() {
         <p>© 2023 THE IGLOO COMPANY</p>
         <Link href={"#"}>SITE CREDITS</Link>
       </div>
+
+      {/* get sale block */}
+
+      <section
+        ref={popRef}
+        className="absolute hidden w-[780px] max-w-[1000px] min-w-[200px] rounded-md bg-white py-5 px-4 left-1/2 -translate-x-1/2 -top-1/2 z-10 flex items-center"
+      >
+        <div className="w-1/2 text-center flex flex-col items-center gap-4 p-5">
+          <span className="text-2xl">
+            Join Our Newsletter & <br />
+            Get 10% Off
+          </span>
+          <p>Enjoy 10% off on your first order.</p>
+          <input
+            className="focus:outline-none border-[1px] rounded-md border-black p-2 w-full"
+            placeholder="EMAIL"
+            type="email"
+          />
+          <button className="bg-black text-white w-full p-2 md:text-2xl">
+            Continue
+          </button>
+          <button className="text-gray-300 mt-3">No Thanks</button>
+        </div>
+
+        {/* img */}
+
+        <div className="w-1/2 relative">
+          {/* <Image /> */}
+          <Image
+            src={"/marquee4.jpg"}
+            alt="popupimg"
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="relative w-full h-full"
+          />
+
+          <AiFillCloseCircle className="absolute right-0 top-0" size={40} />
+        </div>
+      </section>
     </footer>
   );
 }
