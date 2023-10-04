@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        mask: "rgba(0, 0, 0, .6)",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -20,8 +23,7 @@ module.exports = {
         mbCardWidth: "calc(100% / 2 - 16px)",
         topicCardWidth: "calc(100% / 2 - 4px)",
         mbFooterWidth: "calc(50% )",
-        aboutWidth: "calc(33.33% - 4px)"
-        
+        aboutWidth: "calc(33.33% - 4px)",
       },
       aspectRatio: {
         topicCard: ".77 / 1",

@@ -21,6 +21,11 @@ input::placeholder {
   padding-top: 6rem;
 }
 
+.showPoP {
+  display: flex;
+  transform: all 1s ease-in-out;
+}
+
 .imgAni {
   animation: imgAnimation 1s ease-in-out;
 }
