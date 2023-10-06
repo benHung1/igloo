@@ -92,9 +92,3 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-
-// 要傳遞setShowPopup的狀態到這裡
-
-// 收到後遮罩要跟著變跟狀態
-
-// 點擊遮罩部分要變回false 並回傳到footer組件

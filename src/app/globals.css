@@ -10,7 +10,7 @@
 
 input::placeholder {
   font-weight: 700;
-  color: grey;
+  color: #e0e0e0;
 }
 
 .logo {
@@ -46,6 +46,14 @@ header {
 
 .navHidden {
   transform: translateY(-100%);
+}
+
+input {
+  @apply focus:outline-none border-[1px] rounded-md border-[#e0e0e0] p-2 w-full;
+}
+
+.btn {
+  @apply bg-black text-white h-12 px-10 rounded-md;
 }
 
 .navHover::after {

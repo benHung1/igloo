@@ -135,7 +135,7 @@ export default function Footer({ showPopUp, setShowPopUp, popRef, maskRef }) {
             releases and exclusive offers, promise.
           </p>
           <button
-            className="getSaleBtn bg-black text-white h-12 px-10 rounded-md"
+            className="getSaleBtn btn bg-black text-white h-12 px-10 rounded-md"
             onClick={() => setShowPopUp(true)}
           >
             GET 10%
